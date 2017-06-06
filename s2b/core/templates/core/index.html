@@ -1,1 +1,19 @@
-PEPE
+{% load staticfiles %}
+<!DOCTYPE html>
+<html ng-app="s2bApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ramiro Alvaro - ramiroalvaro@hotmail.com & Pedro Paulo Gonçalves Abreu - pedropga95@gmail.com">
+    <meta name="description" content="Terceira etapa do Programa Students to Business (S2B) em Belo Horizonte - MG.">
+    <title>S2B</title>
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css' %}">
+</head>
+<body ng-view>
+    <script src="{% static 'core/vendor/angular.min.js' %}"></script>
+    <script src="{% static 'core/vendor/angular-route.min.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="{% static 'core/vendor/bootstrap.min.js' %}"></script>
+
+</body>
+</html>
