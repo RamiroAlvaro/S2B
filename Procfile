@@ -1,0 +1,1 @@
+web: gunicorn s2b.wsgi --log-file -
