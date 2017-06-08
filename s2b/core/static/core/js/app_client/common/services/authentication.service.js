@@ -15,7 +15,6 @@
         };
         return service;
 
-        ////////////////////
         function login(user) {
             return $resource('/api-token-auth/').save({
                 username: user.username,
