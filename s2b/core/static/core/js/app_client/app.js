@@ -29,7 +29,8 @@
                 templateUrl: '/static/core/js/app_client/auth/login/login.view.html',
                 controller: 'loginCtrl',
                 controllerAs: 'vm'
-            });
+            })
+            .otherwise({redirectTo: '/'});
 
     }
 
