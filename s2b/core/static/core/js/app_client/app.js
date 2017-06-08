@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('s2bApp', ['ngRoute', 'ngResource']);
+    angular.module('s2bApp', ['ngRoute', 'ngResource', 'ngStorage', 'ngMessages']);
 
     function config ($routeProvider, $httpProvider, $resourceProvider) {
         $httpProvider.defaults.xsrfCookieName = 'csrftoken';
@@ -21,13 +21,13 @@
                 controllerAs: 'vm'
             })
             .when('/register', {
-                templateUrl: '/static/core/js/app_client/auth/register/register.view.html',
-                controller: 'registerCtrl',
+                templateUrl: '/static/core/js/app_client/auth/register.view.html',
+                controller: 'AuthController',
                 controllerAs: 'vm'
             })
             .when('/login', {
-                templateUrl: '/static/core/js/app_client/auth/login/login.view.html',
-                controller: 'loginCtrl',
+                templateUrl: '/static/core/js/app_client/auth/login.view.html',
+                controller: 'AuthController',
                 controllerAs: 'vm'
             })
             .otherwise({redirectTo: '/'});
