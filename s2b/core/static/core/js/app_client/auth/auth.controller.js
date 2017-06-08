@@ -10,6 +10,10 @@
     function AuthController($location, $localStorage, authService) {
         var vm = this;
 
+        vm.pageHeader = {
+            title: 'Sign in to S2B'
+        };
+
         vm.login = login;
         vm.logout = logout;
         vm.register = register;
@@ -58,5 +62,6 @@
         function isLoggedIn() {
             return authService.isLoggedIn();
         }
+
     }
 })();

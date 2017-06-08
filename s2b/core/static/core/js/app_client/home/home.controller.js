@@ -5,10 +5,14 @@
        .module('s2bApp')
        .controller('homeCtrl', homeCtrl);
 
-    homeCtrl.$inject = ['$scope'];
-    function homeCtrl($scope) {
-        $scope.pageHeader = {
-            title: 'S2B AngularJS'
+
+    function homeCtrl() {
+
+        var vm = this;
+
+        vm.pageHeader = {
+            title: 'S2B',
+            strapline: 'Find places to work with wifi near you!'
         };
     }
 
