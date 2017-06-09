@@ -6,27 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ramiro Alvaro - ramiroalvaro@hotmail.com & Pedro Paulo Gonçalves Abreu - pedropga95@gmail.com">
     <meta name="description" content="Terceira etapa do Programa Students to Business (S2B) em Belo Horizonte - MG.">
-    <title>S2B</title>
+    <title>S2B-P@@L</title>
     <link rel="stylesheet" href="{% static 'core/css/amelia.bootstrap.min.css' %}">
 </head>
 <body>
     {% verbatim %}
     <div ng-controller="AuthController as vm" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-        <div class="navbar-header"><a href="/" class="navbar-brand">S2B</a>
+        <div class="navbar-header"><a href="/" class="navbar-brand">S2B-P@@L</a>
             <button type="button" data-toggle="collapse" data-target="#navbar-main" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
         </div>
         <div id="navbar-main" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="/#!about">About</a></li>
+                <li><a href="/#!about">Quem Somos</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li ng-hide="vm.isLoggedIn()"><a href="/#!login/">Sign in</a></li>
-                <li ng-hide="vm.isLoggedIn()"><a href="/#!register/">Register</a></li>
+                <li ng-hide="vm.isLoggedIn()"><a href="/#!login/">LOGIN</a></li>
+                <li ng-hide="vm.isLoggedIn()"><a href="/#!register/">CRIAR CONTA</a></li>
                 <li ng-show="vm.isLoggedIn()" class="dropdown">
                     <a href="" class="dropdown-toggle" data-toggle="dropdown">{{ vm.$storage.username }} <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="" ng-click="vm.logout()">Logout</a></li>
+                        <li><a href="" ng-click="vm.logout()">Sair</a></li>
                     </ul>
                 </li>
             </ul>

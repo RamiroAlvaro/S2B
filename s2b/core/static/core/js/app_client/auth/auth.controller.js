@@ -11,7 +11,7 @@
         var vm = this;
 
         vm.pageHeader = {
-            title: 'Sign in to S2B'
+            title: 'LOGIN'
         };
 
         vm.login = login;
