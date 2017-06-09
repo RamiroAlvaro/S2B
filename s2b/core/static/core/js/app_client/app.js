@@ -30,6 +30,11 @@
                 controller: 'AuthController',
                 controllerAs: 'vm'
             })
+            .when('/contact', {
+                templateUrl: '/static/core/js/app_client/contact/contact.view.html',
+                controller: 'contactCtrl',
+                controllerAs: 'vm'
+            })
             .otherwise({redirectTo: '/'});
 
     }
