@@ -1,8 +1,31 @@
-
-
 <div class="container">
+  <page-header content="vm.pageHeader"></page-header>
 
-    <page-header content="vm.pageHeader"></page-header>
+  <div class="row">
+    <div class="col-xs-12 col-sm-8">
+      <label for="filter">Buscar </label>
+      <input id="filter" type="text" name="filter" ng-model="textFilter"><br><br>
+      <!--<div class="error">{{ vm.message }}</div>-->
+      <div class="row list-group">
+        <div class="col-xs-12 list-group-item" ng-repeat="recorrido in vm.data.recorridos | filter : textFilter">
+          <h4>
+            <a href="#/recorrido/{{ recorrido.id }}">Origen: {{ recorrido.name }} - Destino: {{ recorrido.name }}</a>
+            <!--<small class="rating-stars" rating-stars rating="location.rating"></small>-->
+            <span class="badge pull-right badge-default">{{ recorrido.username }}</span>
+          </h4>
+          <p class="address">{{ recorrido.origin_address }} - {{ recorrido.destination_address }}</p>
+          <p>
+            <span class="label label-warning label-facility" ng-repeat="caracteristica in recorrido.caracteristicas">
+              {{ caracteristica }}
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <p class="lead">{{ vm.sidebar.content }}</p>
+    </div>
+  </div>
 
-    <footer-generic></footer-generic>
+  <footer-generic></footer-generic>
 </div>

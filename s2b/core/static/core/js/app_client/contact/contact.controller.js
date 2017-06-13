@@ -10,12 +10,12 @@
     function contactCtrl($location) {
         var vm = this;
 
-        vm.home = home;
+        vm.redirect = redirect;
         vm.pageHeader = {
             title: 'CONTATO'
         };
 
-        function home() {
+        function redirect() {
             $location.path('/');
         }
     }

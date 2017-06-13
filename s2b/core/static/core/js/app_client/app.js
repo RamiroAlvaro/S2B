@@ -35,6 +35,11 @@
                 controller: 'contactCtrl',
                 controllerAs: 'vm'
             })
+            .when('/detail', {
+                templateUrl: '/static/core/js/app_client/tripDetail/tripDetail.view.html',
+                controller: 'tripDetailCtrl',
+                controllerAs: 'vm'
+            })
             .otherwise({redirectTo: '/'});
 
     }
