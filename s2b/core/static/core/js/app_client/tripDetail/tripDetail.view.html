@@ -8,7 +8,7 @@
           <p>{{ vm.trip.origin_address }} --> {{ vm.trip.destination_address }}</p>
           <div class="panel panel-primary">
             <div class="panel-heading">
-              <h2 class="panel-title">Dias e horarios</h2>
+              <h2 class="panel-title">Dias e horários</h2>
             </div>
             <div class="panel-body">
               <p ng-repeat="day in vm.trip.days">
@@ -18,7 +18,7 @@
           </div>
           <div class="panel panel-primary">
             <div class="panel-heading">
-              <h2 class="panel-title">Detalhes</h2>
+              <h2 class="panel-title">Especificações</h2>
             </div>
             <div class="panel-body">
               <span class="label label-warning label-item" ng-repeat="item in vm.trip.items">
@@ -43,19 +43,19 @@
         <div class="col-xs-12">
           <div class="panel panel-primary review-panel">
             <div class="panel-heading">
-              <a ng-show="vm.isLoggedIn()" ng-click="vm.popupReviewForm()" class="btn btn-default btn-xs pull-right">Enviar mensagen</a>
-              <a ng-hide="vm.isLoggedIn()" href="/#!login" class="btn btn-default btn-xs pull-right">Login para enviar mensagen</a>
+              <a ng-show="vm.isLoggedIn()" ng-click="vm.popupReviewForm()" class="btn btn-default btn-xs pull-right">Enviar mensagem</a>
+              <a ng-hide="vm.isLoggedIn()" href="/#!login" class="btn btn-default btn-xs pull-right">Login para enviar mensagem</a>
               <h2 class="panel-title">Mensagens</h2>
             </div>
             <div class="panel-body mensagen-container">
               <div class="row">
-                <div class="mensagen" ng-repeat="mensagen in vm.trip.mensagens">
+                <div class="mensagen" ng-repeat="message in vm.trip.messages">
                   <div class="well well-sm mensagen-header">
-                    <span class="mensagenAuthor">{{ mensagen.author }}</span>
-                    <small class="mensagenTimestamp">{{ mensagen.createdOn}}</small>
+                    <span class="mensagenAuthor">{{ message.author }}</span>
+                    <small class="mensagenTimestamp">{{ message.createdOn}}</small>
                   </div>
                   <div class="col-xs-12">
-                    <p>{{ mensagen.text }}</p>
+                    <p>{{ message.text }}</p>
                   </div>
                 </div>
               </div>
