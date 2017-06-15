@@ -11,7 +11,7 @@
         var vm = this;
 
         vm.pageHeader = {
-            title: '',
+            title: 'DETAIL VIEW',
             strapline: ''
         };
 
