@@ -3,7 +3,7 @@
 
     angular
         .module('s2bApp')
-        .controller('aboutCtrl', aboutCtrl)
+        .controller('aboutCtrl', aboutCtrl);
     
     function aboutCtrl() {
         var vm = this;
