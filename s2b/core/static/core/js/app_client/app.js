@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('s2bApp', ['ngRoute', 'ngResource', 'ngStorage', 'ngMessages']);
+    angular.module('s2bApp', ['ngRoute', 'ngResource', 'ngStorage', 'ngMessages', 'ui.bootstrap']);
 
     function config ($routeProvider, $httpProvider, $resourceProvider) {
         $httpProvider.defaults.xsrfCookieName = 'csrftoken';

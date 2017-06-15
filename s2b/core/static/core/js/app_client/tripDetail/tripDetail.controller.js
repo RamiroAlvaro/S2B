@@ -5,11 +5,11 @@
        .module('s2bApp')
        .controller('tripDetailCtrl', tripDetailCtrl);
 
-
-    function tripDetailCtrl() {
+    tripDetailCtrl.$inject = ['authService', '$uibModal'];
+    function tripDetailCtrl(authService, $uibModal) {
 
         var vm = this;
-
+        vm.isLoggedIn = isLoggedIn;
         vm.pageHeader = {
             title: 'Funcionários --> Santa Tereza ',
             strapline: ''
@@ -37,6 +37,20 @@
                     createdOn: '15/06/2017',
                     text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor'
                 }]
+        };
+
+        function isLoggedIn() {
+            return authService.isLoggedIn();
+        };
+
+
+        vm.popupReviewForm = function () {
+            var modalInstance = $uibModal.open({
+                templateUrl: '/static/core/js/app_client/messageModal/messageModal.view.html',
+                controller: 'messageModalCtrl as vm',
+
+            });
+
         };
 
     }
