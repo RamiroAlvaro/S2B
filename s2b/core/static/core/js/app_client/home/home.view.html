@@ -8,11 +8,11 @@
       <!--<div class="error">{{ vm.message }}</div>-->
       <div class="row list-group">
         <div class="col-xs-12 list-group-item" ng-repeat="trip in vm.data.trips | filter : textFilter">
-          <h4>
+          <h2>
             <a href="/#!detail">{{ trip.origin }} --> {{ trip.destination }}</a>
 
             <span class="badge pull-right badge-default">{{ trip.username }}</span>
-          </h4>
+          </h2>
           <p class="address">{{ trip.origin_address }} --> {{ trip.destination_address }}</p>
           <p>
             <span class="label label-warning label-facility" ng-repeat="item in trip.items">
