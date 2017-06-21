@@ -32,12 +32,69 @@
           <label for="asento">Cantidade de asentos *</label>
           <input type="number" ng-model="vm.trip.asento" class="form-control" id="asento" placeholder="Digite a cantidate de asentos disponibles" min="1" max="10" required>
         </div>
-        <div class="form-group" ng-init="vm.trip.tipo = 'Habitual'">
+        <div class="form-group" ng-init="vm.trip.tipo = 'Eventual'">
           <label for="tipo">Tipo de trajeto *</label>
           <select ng-model="vm.trip.tipo" class="form-control" id="tipo">
-            <option>Habitual</option>
             <option>Eventual</option>
+            <option>Habitual</option>
           </select>
+        </div>
+        <div ng-show="vm.trip.tipo == 'Habitual'">
+            <div class="form-group form-inline">
+
+               <input type="time" name="hora" value="12:00" step="600">
+               <div class="checkbox">
+                  <label><input type="checkbox" value="">Segunda-feira</label>
+               </div>
+            </div>
+            <div class="form-group form-inline">
+
+               <input type="time" name="hora" value="12:00" step="600">
+                <div class="checkbox">
+                  <label><input type="checkbox" value="">Terça-feira</label>
+               </div>
+            </div>
+            <div class="form-group form-inline">
+
+               <input type="time" name="hora" value="12:00" step="600">
+                <div class="checkbox">
+                  <label><input type="checkbox" value="">Quarta-feira</label>
+               </div>
+            </div>
+            <div class="form-group form-inline">
+
+               <input type="time" name="hora" value="12:00" step="600">
+                <div class="checkbox">
+                  <label><input type="checkbox" value="">Quinta-feira</label>
+               </div>
+            </div>
+            <div class="form-group form-inline">
+
+               <input type="time" name="hora" value="12:00" step="600">
+                <div class="checkbox">
+                  <label><input type="checkbox" value="">Sexta-feira</label>
+               </div>
+            </div>
+            <div class="form-group form-inline">
+
+               <input type="time" name="hora" value="12:00" step="600">
+                <div class="checkbox">
+                  <label><input type="checkbox" value="">Sábado</label>
+               </div>
+            </div>
+            <div class="form-group form-inline">
+
+               <input type="time" name="hora" value="12:00" step="600">
+                <div class="checkbox">
+                  <label><input type="checkbox" value="">Domingo</label>
+               </div>
+            </div>
+        </div>
+        <div ng-show="vm.trip.tipo == 'Eventual'">
+            <div class="form-group">
+               <label for="dia">Dia e horário *</label>
+               <input type="datetime-local" ng-model="vm.trip.dia" class="form-control" id="dia" required>
+            </div>
         </div>
         <button type="submit" class="btn btn-default" ng-disabled="tripForm.$invalid">COMPARTILHAR</button>
       </form>
