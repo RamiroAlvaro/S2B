@@ -8,12 +8,13 @@
     tripFormCtrl.$inject = ['$location'];
     function tripFormCtrl($location) {
         var vm = this;
-        vm.redirect = redirect;
+        vm.submit = submit;
         vm.pageHeader = {
             title: 'INSIRA SEU TRAJETO'
         };
 
-        function redirect() {
+        function submit() {
+            console.log('Data tripForm ', vm.trip);
             $location.path('/');
         }
 

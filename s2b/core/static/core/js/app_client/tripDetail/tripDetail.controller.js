@@ -21,7 +21,7 @@
                 destination: 'Santa Tereza',
                 origin_address: 'Av. Getúlio Vargas, 471',
                 destination_address: 'Rua Hermilo Alves, 85',
-                items: ['Vagas: 3', 'Homem', 'Honda Civic', 'Preto', 'HAO-1462'],
+                items: ['Vagas: 3', 'Homem', 'Honda Civic', 'HAO-1462'],
                 days: ['Segunda: 14:00 hs', 'Terça: 14:30 hs', 'Quarta: 14:00 hs','Quinta: 14:30 hs', 'Sexta: 14:00 hs'],
                 username: 'Ramiro Alvaro',
                 messages: [{

@@ -11,7 +11,7 @@
         var vm = this;
 
         vm.pageHeader = {
-            title: 'S2B-P@@L ',
+            title: 'S2B-POOL ',
             strapline: 'Carona solidária !!!'
         };
         vm.sidebar = {
@@ -24,7 +24,7 @@
                 destination: 'Santa Tereza',
                 origin_address : 'Av. Getúlio Vargas, 471',
                 destination_address: 'Rua Hermilo Alves, 85',
-                items: ['Habitual', 'Vagas: 3', 'Homem', 'Honda Civic', 'Preto', 'HAO-1462'],
+                items: ['Habitual', 'Vagas: 3', 'Homem', 'Honda Civic', 'HAO-1462'],
                 username: 'Ramiro Alvaro'
             },{
                 id: 2,
@@ -32,7 +32,7 @@
                 destination: 'Coração Eucarístico',
                 origin_address : 'Rua Erê, 236',
                 destination_address: 'Av. Dom José Gaspar, 725',
-                items: ['Habitual', 'Vagas: 1', 'Mulher', 'Fiat Punto', 'Branco', 'HKJ-5407'],
+                items: ['Habitual', 'Vagas: 1', 'Mulher', 'Fiat Punto', 'HKJ-5407'],
                 username: 'Ana Paula Coda'
             },{
                 id: 3,
@@ -40,7 +40,7 @@
                 destination: 'Havaí',
                 origin_address : 'Rua Curvelo, 95',
                 destination_address: 'Rua Maria Beatriz, 288',
-                items: ['Eventual', 'Vagas: 3', 'Homem', 'Nissan Livina', 'Vermelho', 'HEX-0049'],
+                items: ['Eventual', 'Vagas: 3', 'Homem', 'Nissan Livina', 'HEX-0049'],
                 username: 'Pedro Paulo Gonçalves'
             },{
                 id: 4,
@@ -48,7 +48,7 @@
                 destination: 'Funcionários',
                 origin_address : 'Rua Hermilo Alves, 85',
                 destination_address: 'Av. Getúlio Vargas, 471',
-                items: ['Eventual', 'Vagas: 1', 'Homem', 'Fiat Siena', 'Preto', 'OAL-3741'],
+                items: ['Eventual', 'Vagas: 1', 'Homem', 'Fiat Siena','OAL-3741'],
                 username: 'Mateus Hedegaard'
             },{
                 id: 5,
@@ -56,7 +56,7 @@
                 destination: 'Prado',
                 origin_address : 'Av. Dom José Gaspar, 725',
                 destination_address: 'Rua Erê, 236',
-                items: ['Habitual', 'Vagas: 2', 'Mulher', 'Audi A3', 'Cinza', 'HNP-3131'],
+                items: ['Habitual', 'Vagas: 2', 'Mulher', 'Audi A3', 'HNP-3131'],
                 username: 'Elsa Susana Poulsen'
             }]
         };
