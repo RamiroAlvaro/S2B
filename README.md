@@ -2,6 +2,8 @@
 
 Sistema de carpooling do S2B.
 
+[![Code Health](https://landscape.io/github/RamiroAlvaro/S2B-Pedro-Ramiro/master/landscape.svg?style=flat)](https://landscape.io/github/RamiroAlvaro/S2B-Pedro-Ramiro/master)
+
 ## Como desenvolver?
  
 1. Clone o repositório.
