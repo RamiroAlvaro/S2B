@@ -1,8 +1,8 @@
-#S2B-POOL
+# S2B-POOL
 
 Sistema de carpooling do S2B.
 
-##Como desenvolver?
+## Como desenvolver?
  
 1. Clone o repositório.
 2. Crie um virtualenv com Python 3.6.0
