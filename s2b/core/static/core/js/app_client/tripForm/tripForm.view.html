@@ -40,54 +40,54 @@
           </select>
         </div>
         <div ng-show="vm.trip.tipo == 'Habitual'">
-            <div class="form-group form-inline">
-
-               <input type="time" name="hora" value="12:00" step="600">
+            <div class="form-group">
                <div class="checkbox">
-                  <label><input type="checkbox" value="">Segunda-feira</label>
+                  <label><input ng-model="vm.trip.segunda" type="checkbox" value="">Segunda-feira</label>
                </div>
-            </div>
-            <div class="form-group form-inline">
+               <input ng-show="vm.trip.segunda" type="time" name="hora" value="12:00" step="600">
 
-               <input type="time" name="hora" value="12:00" step="600">
-                <div class="checkbox">
-                  <label><input type="checkbox" value="">Terça-feira</label>
-               </div>
             </div>
-            <div class="form-group form-inline">
-
-               <input type="time" name="hora" value="12:00" step="600">
-                <div class="checkbox">
-                  <label><input type="checkbox" value="">Quarta-feira</label>
+            <div class="form-group">
+               <div class="checkbox">
+                  <label><input ng-model="vm.trip.terca" type="checkbox" value="">Terça-feira</label>
                </div>
+               <input ng-show="vm.trip.terca" type="time" name="hora" value="12:00" step="600">
+
             </div>
-            <div class="form-group form-inline">
-
-               <input type="time" name="hora" value="12:00" step="600">
-                <div class="checkbox">
-                  <label><input type="checkbox" value="">Quinta-feira</label>
+            <div class="form-group">
+               <div class="checkbox">
+                  <label><input ng-model="vm.trip.quarta" type="checkbox" value="">Quarta-feira</label>
                </div>
+               <input ng-show="vm.trip.quarta" type="time" name="hora" value="12:00" step="600">
+
             </div>
-            <div class="form-group form-inline">
-
-               <input type="time" name="hora" value="12:00" step="600">
-                <div class="checkbox">
-                  <label><input type="checkbox" value="">Sexta-feira</label>
+            <div class="form-group">
+               <div class="checkbox">
+                  <label><input ng-model="vm.trip.quinta" type="checkbox" value="">Quinta-feira</label>
                </div>
+               <input ng-show="vm.trip.quinta" type="time" name="hora" value="12:00" step="600">
+
             </div>
-            <div class="form-group form-inline">
-
-               <input type="time" name="hora" value="12:00" step="600">
-                <div class="checkbox">
-                  <label><input type="checkbox" value="">Sábado</label>
+            <div class="form-group">
+               <div class="checkbox">
+                  <label><input ng-model="vm.trip.sexta" type="checkbox" value="">Sexta-feira</label>
                </div>
+               <input ng-show="vm.trip.sexta" type="time" name="hora" value="12:00" step="600">
+
             </div>
-            <div class="form-group form-inline">
-
-               <input type="time" name="hora" value="12:00" step="600">
-                <div class="checkbox">
-                  <label><input type="checkbox" value="">Domingo</label>
+            <div class="form-group">
+               <div class="checkbox">
+                  <label><input ng-model="vm.trip.sabado" type="checkbox" value="">Sábado</label>
                </div>
+               <input ng-show="vm.trip.sabado" type="time" name="hora" value="12:00" step="600">
+
+            </div>
+            <div class="form-group">
+               <div class="checkbox">
+                  <label><input ng-model="vm.trip.domingo" type="checkbox" value="">Domingo</label>
+               </div>
+               <input ng-show="vm.trip.domingo" type="time" name="hora" value="12:00" step="600">
+
             </div>
         </div>
         <div ng-show="vm.trip.tipo == 'Eventual'">
