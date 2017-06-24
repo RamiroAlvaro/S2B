@@ -27,7 +27,7 @@
                 messages: [{
                     author: 'Ana Paula Coda',
                     createdOn: '26/06/2017',
-                    text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor'
+                    text:'Ramiro me confirma? Se puder, me chame no whatsapp 31 99138 7178 pros detalhes.'
                 },{
                     author: 'Pedro Paulo Gonçalves',
                     createdOn: '24/06/2017',

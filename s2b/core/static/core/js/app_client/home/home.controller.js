@@ -12,10 +12,10 @@
 
         vm.pageHeader = {
             title: 'S2B-POOL ',
-            strapline: 'Carona solidária !!!'
+            strapline: 'Procurando uma carona?'
         };
         vm.sidebar = {
-            content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            content: "Junte-se a motoristas no seu trajeto habitual para o trabalho, faculdade e de volta para casa ou apenas em um passeio eventual. Não há necessidade de esperar por um ônibus ou gastar uma fortuna em táxis e Uber! Viaje junto com pessoas como você em um carro regular. É mais barato, mais rápido e mais agradável do que usar o transporte público. Você quer ir a algum lugar e precisa de uma carona? Encontre motoristas relevantes no S2B-POOL e contacte-os para marcar uma carona. Você viaja sozinho para o trabalho, faculdade ou outra cidade? Ofereça carona e receba por ela! Compartilhe os detalhes da sua carona no S2B-POOL e passageiros entrarão em contato com você. Pegue passageiros e economize dinheiro, conheça pessoas interessantes e desfrute de boa companhia."
         };
         vm.data = {
             trips: [{
