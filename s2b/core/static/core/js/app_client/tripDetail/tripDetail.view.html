@@ -1,73 +1,79 @@
 <div class="container">
-  <page-header content="vm.pageHeader"></page-header>
+    <page-header content="vm.pageHeader"></page-header>
 
-  <div class="row">
-    <div class="col-xs-12 col-md-9">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6">
-          <p>{{ vm.trip.origin_address }} --> {{ vm.trip.destination_address }}</p>
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              <h2 class="panel-title">Dias e horários</h2>
-            </div>
-            <div class="panel-body">
-              <p ng-repeat="day in vm.trip.days">
-                {{ day }}
-              </p>
-            </div>
-          </div>
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              <h2 class="panel-title">Especificações</h2>
-            </div>
-            <div class="panel-body">
-              <span class="label label-warning label-item" ng-repeat="item in vm.trip.items">
+    <div class="row">
+        <div class="col-xs-12 col-md-9">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <p>{{ vm.trip.origin_address }} --> {{ vm.trip.destination_address }}</p>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">Dias e horários</h2>
+                        </div>
+                        <div class="panel-body">
+                            <p data-ng-repeat="day in vm.trip.days">
+                                {{ day }}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">Especificações</h2>
+                        </div>
+                        <div class="panel-body">
+              <span class="label label-warning label-item" data-ng-repeat="item in vm.trip.items">
                 <span class="glyphicon glyphicon-ok"></span>
                 {{ item }}
               </span>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 location-map">
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              <h2 class="panel-title">Mapa</h2>
-            </div>
-            <div class="panel-body">
-              <img src="/static/core/img/mapa.png" class="img-responsive img-rounded">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="panel panel-primary review-panel">
-            <div class="panel-heading">
-              <a ng-show="vm.isLoggedIn()" ng-click="vm.popupReviewForm()" class="btn btn-default btn-xs pull-right">Enviar mensagem</a>
-              <a ng-hide="vm.isLoggedIn()" href="/#!login" class="btn btn-default btn-xs pull-right">Login para enviar mensagem</a>
-              <h2 class="panel-title">Mensagens</h2>
-            </div>
-            <div class="panel-body mensagen-container">
-              <div class="row">
-                <div class="mensagen" ng-repeat="message in vm.trip.messages">
-                  <div class="well well-sm mensagen-header">
-                    <span class="mensagenAuthor">{{ message.author }}</span>
-                    <small class="mensagenTimestamp">{{ message.createdOn}}</small>
-                  </div>
-                  <div class="col-xs-12">
-                    <p>{{ message.text }}</p>
-                  </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="col-xs-12 col-sm-6 location-map">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">Mapa</h2>
+                        </div>
+                        <div class="panel-body">
+                            <img src="/static/core/img/mapa.png" class="img-responsive img-rounded">
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="panel panel-primary review-panel">
+                        <div class="panel-heading">
+                            <a data-ng-show="vm.isLoggedIn()" data-ng-click="vm.popupReviewForm()"
+                               class="btn btn-default btn-xs pull-right">Enviar mensagem</a>
+                            <a data-ng-hide="vm.isLoggedIn()" href="/#!login" class="btn btn-default btn-xs pull-right">Login
+                                para enviar mensagem</a>
+                            <h2 class="panel-title">Mensagens</h2>
+                        </div>
+                        <div class="panel-body mensagen-container">
+                            <div class="row">
+                                <div class="mensagen" ng-repeat="message in vm.trip.messages">
+                                    <div class="well well-sm mensagen-header">
+                                        <span class="mensagenAuthor">{{ message.author }}</span>
+                                        <small class="mensagenTimestamp">{{ message.createdOn }}</small>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <p>{{ message.text }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="col-xs-12 col-md-3">
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.</p>
+        </div>
     </div>
-    <div class="col-xs-12 col-md-3">
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-  </div>
-  <footer-generic></footer-generic>
+    <footer-generic></footer-generic>
 </div>

@@ -1,6 +1,6 @@
 {% load staticfiles %}
 <!DOCTYPE html>
-<html ng-app="s2bApp">
+<html data-ng-app="s2bApp">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
 </head>
 <body>
 {% verbatim %}
-<div ng-controller="AuthController as vm" class="navbar navbar-default navbar-fixed-top">
+<div data-ng-controller="AuthController as vm" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header"><a href="/" class="navbar-brand">S2B-P@@L</a>
             <button type="button" data-toggle="collapse" data-target="#navbar-main" class="navbar-toggle"><span
@@ -21,18 +21,19 @@
         </div>
         <div id="navbar-main" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li ng-show="vm.isLoggedIn()"><a href="/#!trip">Trajeto</a></li>
+                <li data-ng-show="vm.isLoggedIn()"><a href="/#!trip">Trajeto</a></li>
                 <li><a href="/#!about">Quem Somos</a></li>
                 <li><a href="/#!contact">Contato</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li ng-hide="vm.isLoggedIn()"><a href="/#!login/">LOGIN</a></li>
-                <li ng-hide="vm.isLoggedIn()"><a href="/#!register/">CRIAR CONTA</a></li>
-                <li ng-show="vm.isLoggedIn()" class="dropdown">
-                    <a href="" class="dropdown-toggle" data-toggle="dropdown">{{ vm.$storage.username | uppercase }} <span
-                            class="caret"></span></a>
+                <li data-ng-hide="vm.isLoggedIn()"><a href="/#!login/">LOGIN</a></li>
+                <li data-ng-hide="vm.isLoggedIn()"><a href="/#!register/">CRIAR CONTA</a></li>
+                <li data-ng-show="vm.isLoggedIn()" class="dropdown">
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown">{{ vm.$storage.username | uppercase }}
+                        <span
+                                class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="" ng-click="vm.logout()">Sair</a></li>
+                        <li><a href="" data-ng-click="vm.logout()">Sair</a></li>
                     </ul>
                 </li>
             </ul>
@@ -40,7 +41,7 @@
     </div>
 </div>
 {% endverbatim %}
-<div class="container" ng-view></div>
+<div class="container" data-ng-view></div>
 <script src="{% static 'core/vendor/angular.min.js' %}"></script>
 <script src="{% static 'core/vendor/angular-route.min.js' %}"></script>
 <script src="{% static 'core/vendor/angular-resource.min.js' %}"></script>

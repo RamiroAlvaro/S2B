@@ -1,106 +1,113 @@
 <div class="container">
 
-  <page-header content="vm.pageHeader"></page-header>
-  <div class="row">
-    <div class="col-md-6 col-sm-12">
-      <form ng-submit="vm.submit()" name="tripForm">
-        <div class="form-group">
-          <label for="bairroo">Bairro de origem *</label>
-          <input type="text" ng-model="vm.trip.bairroo" class="form-control" id="bairroo" placeholder="Digite o bairro de origem" required autofocus>
-        </div>
-        <div class="form-group">
-          <label for="enderecoo">Endereço de origem *</label>
-          <input type="text" ng-model="vm.trip.enderecoo" class="form-control" id="enderecoo" placeholder="Digite o endereço de origem" required>
-        </div>
-        <div class="form-group">
-          <label for="bairrod">Bairro de destino *</label>
-          <input type="text" ng-model="vm.trip.bairrod" class="form-control" id="bairrod" placeholder="Digite o bairro de destino" required>
-        </div>
-        <div class="form-group">
-          <label for="enderecod">Endereço de origem *</label>
-          <input type="text" ng-model="vm.trip.enderecod" class="form-control" id="enderecod" placeholder="Digite o endereço de destino" required>
-        </div>
-        <div class="form-group">
-          <label for="carro">Carro *</label>
-          <input type="text" ng-model="vm.trip.carro" class="form-control" id="carro" placeholder="Digite marca e modelo do carro" required>
-        </div>
-        <div class="form-group">
-          <label for="placa">Placa do carro *</label>
-          <input type="text" ng-model="vm.trip.placa" class="form-control" id="placa" placeholder="Digite a placa do carro" required>
-        </div>
-        <div class="form-group">
-          <label for="asento">Quantidade de assentos *</label>
-          <input type="number" ng-model="vm.trip.asento" class="form-control" id="asento" placeholder="Digite a quantidate de assentos disponiveís" min="1" max="10" required>
-        </div>
-        <div class="form-group" ng-init="vm.trip.tipo = 'Eventual'">
-          <label for="tipo">Tipo de trajeto *</label>
-          <select ng-model="vm.trip.tipo" class="form-control" id="tipo">
-            <option>Eventual</option>
-            <option>Habitual</option>
-          </select>
-        </div>
-        <div ng-show="vm.trip.tipo == 'Habitual'">
-            <div class="form-group">
-               <div class="checkbox">
-                  <label><input ng-model="vm.trip.segunda" type="checkbox" value="">Segunda-feira</label>
-               </div>
-               <input ng-show="vm.trip.segunda" type="time" name="hora" value="12:00" step="600">
+    <page-header content="vm.pageHeader"></page-header>
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <form data-ng-submit="vm.submit()" name="tripForm">
+                <div class="form-group">
+                    <label for="bairroo">Bairro de origem *</label>
+                    <input type="text" data-ng-model="vm.trip.bairroo" class="form-control" id="bairroo"
+                           placeholder="Digite o bairro de origem" required autofocus>
+                </div>
+                <div class="form-group">
+                    <label for="enderecoo">Endereço de origem *</label>
+                    <input type="text" data-ng-model="vm.trip.enderecoo" class="form-control" id="enderecoo"
+                           placeholder="Digite o endereço de origem" required>
+                </div>
+                <div class="form-group">
+                    <label for="bairrod">Bairro de destino *</label>
+                    <input type="text" data-ng-model="vm.trip.bairrod" class="form-control" id="bairrod"
+                           placeholder="Digite o bairro de destino" required>
+                </div>
+                <div class="form-group">
+                    <label for="enderecod">Endereço de origem *</label>
+                    <input type="text" data-ng-model="vm.trip.enderecod" class="form-control" id="enderecod"
+                           placeholder="Digite o endereço de destino" required>
+                </div>
+                <div class="form-group">
+                    <label for="carro">Carro *</label>
+                    <input type="text" data-ng-model="vm.trip.carro" class="form-control" id="carro"
+                           placeholder="Digite marca e modelo do carro" required>
+                </div>
+                <div class="form-group">
+                    <label for="placa">Placa do carro *</label>
+                    <input type="text" data-ng-model="vm.trip.placa" class="form-control" id="placa"
+                           placeholder="Digite a placa do carro" required>
+                </div>
+                <div class="form-group">
+                    <label for="asento">Quantidade de assentos *</label>
+                    <input type="number" data-ng-model="vm.trip.asento" class="form-control" id="asento"
+                           placeholder="Digite a quantidate de assentos disponiveís" min="1" max="10" required>
+                </div>
+                <div class="form-group" data-ng-init="vm.trip.tipo = 'Eventual'">
+                    <label for="tipo">Tipo de trajeto *</label>
+                    <select data-ng-model="vm.trip.tipo" class="form-control" id="tipo">
+                        <option>Eventual</option>
+                        <option>Habitual</option>
+                    </select>
+                </div>
+                <div data-ng-show="vm.trip.tipo == 'Habitual'">
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label><input data-ng-model="vm.trip.segunda" type="checkbox" value="">Segunda-feira</label>
+                        </div>
+                        <input data-ng-show="vm.trip.segunda" type="time" name="hora" value="12:00" step="600">
 
-            </div>
-            <div class="form-group">
-               <div class="checkbox">
-                  <label><input ng-model="vm.trip.terca" type="checkbox" value="">Terça-feira</label>
-               </div>
-               <input ng-show="vm.trip.terca" type="time" name="hora" value="12:00" step="600">
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label><input data-ng-model="vm.trip.terca" type="checkbox" value="">Terça-feira</label>
+                        </div>
+                        <input data-ng-show="vm.trip.terca" type="time" name="hora" value="12:00" step="600">
 
-            </div>
-            <div class="form-group">
-               <div class="checkbox">
-                  <label><input ng-model="vm.trip.quarta" type="checkbox" value="">Quarta-feira</label>
-               </div>
-               <input ng-show="vm.trip.quarta" type="time" name="hora" value="12:00" step="600">
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label><input data-ng-model="vm.trip.quarta" type="checkbox" value="">Quarta-feira</label>
+                        </div>
+                        <input data-ng-show="vm.trip.quarta" type="time" name="hora" value="12:00" step="600">
 
-            </div>
-            <div class="form-group">
-               <div class="checkbox">
-                  <label><input ng-model="vm.trip.quinta" type="checkbox" value="">Quinta-feira</label>
-               </div>
-               <input ng-show="vm.trip.quinta" type="time" name="hora" value="12:00" step="600">
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label><input data-ng-model="vm.trip.quinta" type="checkbox" value="">Quinta-feira</label>
+                        </div>
+                        <input data-ng-show="vm.trip.quinta" type="time" name="hora" value="12:00" step="600">
 
-            </div>
-            <div class="form-group">
-               <div class="checkbox">
-                  <label><input ng-model="vm.trip.sexta" type="checkbox" value="">Sexta-feira</label>
-               </div>
-               <input ng-show="vm.trip.sexta" type="time" name="hora" value="12:00" step="600">
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label><input data-ng-model="vm.trip.sexta" type="checkbox" value="">Sexta-feira</label>
+                        </div>
+                        <input data-ng-show="vm.trip.sexta" type="time" name="hora" value="12:00" step="600">
 
-            </div>
-            <div class="form-group">
-               <div class="checkbox">
-                  <label><input ng-model="vm.trip.sabado" type="checkbox" value="">Sábado</label>
-               </div>
-               <input ng-show="vm.trip.sabado" type="time" name="hora" value="12:00" step="600">
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label><input data-ng-model="vm.trip.sabado" type="checkbox" value="">Sábado</label>
+                        </div>
+                        <input data-ng-show="vm.trip.sabado" type="time" name="hora" value="12:00" step="600">
 
-            </div>
-            <div class="form-group">
-               <div class="checkbox">
-                  <label><input ng-model="vm.trip.domingo" type="checkbox" value="">Domingo</label>
-               </div>
-               <input ng-show="vm.trip.domingo" type="time" name="hora" value="12:00" step="600">
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label><input data-ng-model="vm.trip.domingo" type="checkbox" value="">Domingo</label>
+                        </div>
+                        <input data-ng-show="vm.trip.domingo" type="time" name="hora" value="12:00" step="600">
 
-            </div>
+                    </div>
+                </div>
+                <div data-ng-show="vm.trip.tipo == 'Eventual'">
+                    <div class="form-group">
+                        <label for="dia">Dia e horário *</label>
+                        <input type="datetime-local" data-ng-model="vm.trip.dia" class="form-control" id="dia" required>
+                    </div>
+                </div>
+                <p>(*) São obrigatórios</p>
+                <button type="submit" class="btn btn-default" data-ng-disabled="tripForm.$invalid">COMPARTILHAR</button>
+            </form>
         </div>
-        <div ng-show="vm.trip.tipo == 'Eventual'">
-            <div class="form-group">
-               <label for="dia">Dia e horário *</label>
-               <input type="datetime-local" ng-model="vm.trip.dia" class="form-control" id="dia" required>
-            </div>
-        </div>
-        <p>(*) São obrigatórios</p>
-        <button type="submit" class="btn btn-default" ng-disabled="tripForm.$invalid">COMPARTILHAR</button>
-      </form>
     </div>
-  </div>
 
-  <footer-generic></footer-generic>
+    <footer-generic></footer-generic>
 </div>
