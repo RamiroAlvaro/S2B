@@ -31,11 +31,11 @@
                 },{
                     author: 'Pedro Paulo Gonçalves',
                     createdOn: '24/06/2017',
-                    text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor'
+                    text:'Galera não conseguirei ir hoje.'
                 },{
                     author: 'Mateus Hedegaard',
                     createdOn: '15/06/2017',
-                    text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor'
+                    text:'Já estou chegando :-)'
                 }]
         };
 
