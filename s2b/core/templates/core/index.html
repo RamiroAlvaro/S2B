@@ -22,6 +22,7 @@
         <div id="navbar-main" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li data-ng-show="vm.isLoggedIn()"><a href="/#!trip">Trajeto</a></li>
+                <li data-ng-show="vm.isLoggedIn()"><a href="/#!trips">Meus Trajetos</a></li>
                 <li><a href="/#!about">Quem Somos</a></li>
                 <li><a href="/#!contact">Contato</a></li>
             </ul>
@@ -59,6 +60,7 @@
 <script src="{% static 'core/js/app_client/messageModal/messageModal.controller.js' %}"></script>
 <script src="{% static 'core/js/app_client/contact/contact.controller.js' %}"></script>
 <script src="{% static 'core/js/app_client/tripForm/tripForm.controller.js' %}"></script>
+<script src="{% static 'core/js/app_client/tripTable/tripTable.controller.js' %}"></script>
 <script src="{% static 'core/js/app_client/common/directives/footerGeneric/footerGeneric.directive.js' %}"></script>
 <script src="{% static 'core/js/app_client/common/directives/pageHeader/pageHeader.directive.js' %}"></script>
 <script src="{% static 'core/js/app_client/common/services/authentication.service.js' %}"></script>

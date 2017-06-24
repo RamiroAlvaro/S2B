@@ -45,6 +45,11 @@
                 controller: 'tripFormCtrl',
                 controllerAs: 'vm'
             })
+            .when('/trips', {
+                templateUrl: '/static/core/js/app_client/tripTable/tripTable.view.html',
+                controller: 'tripTableCtrl',
+                controllerAs: 'vm'
+            })
             .otherwise({redirectTo: '/'});
 
     }
