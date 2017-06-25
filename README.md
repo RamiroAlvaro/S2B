@@ -13,7 +13,7 @@ Sistema de carpooling do S2B.
 5. Configure a instância com o .env
 
 ```console
-git clone git@github.com:RamiroAlvaro/S2B-Pedro-Ramiro.git s2b
+git clone git@github.com:RamiroAlvaro/s2b.git s2b
 cd s2b
 python -m venv .s2b
 source .s2b/bin/activate
